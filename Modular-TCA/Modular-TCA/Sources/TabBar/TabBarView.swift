@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TabBarView.swift
 //  Modular-TCA
 //
 //  Created by Wimes on 2022/01/08.
@@ -9,24 +9,20 @@ import SwiftUI
 import A1
 import ComposableArchitecture
 
-struct ContentView: View {
-    let store: Store<RootState, RootAction>
+struct TabBarView: View {
+    let store: Store<TabBarState, TabBarAction>
     
     var body: some View {
-        WithViewStore(self.store.stateless){ viewStore in
+        WithViewStore(self.store){ viewStore in
             TabView{
                 A1View(store: self.store.scope(
                     state: \.a1State,
-                    action: RootAction.a1Action
+                    action: TabBarAction.a1Action
                 ))
                     .tabItem {
                         Image(systemName: "list.dash")
-                        Text("A1")
-                    }
-                DummyView()
-                    .tabItem {
-                        Image(systemName: "list.dash")
-                        Text("Dummy")
+                        Text("loginData: \(viewStore.loginData)")
+//                        Text("A1")
                     }
                 
             }

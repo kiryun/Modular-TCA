@@ -12,13 +12,11 @@ import ComposableArchitecture
 struct Modular_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
-                store: Store(
-                    initialState: RootState(),
-                    reducer: rootReducer,
-                    environment: RootEnvironmnet()
-                )
-            )
+            RootView(store: Store(
+                initialState: RootState(),
+                reducer: rootReducer,
+                environment: RootEnvironment()
+            ))
         }
     }
 }

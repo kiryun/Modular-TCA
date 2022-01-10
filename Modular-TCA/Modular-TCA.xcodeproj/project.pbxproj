@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B74F732789D95D009419AE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74F722789D95D009419AE /* LoginView.swift */; };
+		04B74F7A2789D9B9009419AE /* TabBarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74F792789D9B9009419AE /* TabBarFeature.swift */; };
+		04B74F7C2789D9D7009419AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74F7B2789D9D7009419AE /* RootView.swift */; };
+		04B74F7E2789DBE1009419AE /* LoginFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74F7D2789DBE1009419AE /* LoginFeature.swift */; };
 		04CE6AAB2789A66000D5D651 /* Modular_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AAA2789A66000D5D651 /* Modular_TCAApp.swift */; };
-		04CE6AAD2789A66000D5D651 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AAC2789A66000D5D651 /* ContentView.swift */; };
+		04CE6AAD2789A66000D5D651 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AAC2789A66000D5D651 /* TabBarView.swift */; };
 		04CE6AAF2789A66100D5D651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE6AAE2789A66100D5D651 /* Assets.xcassets */; };
 		04CE6AB22789A66100D5D651 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE6AB12789A66100D5D651 /* Preview Assets.xcassets */; };
 		04CE6ABC2789A66100D5D651 /* Modular_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6ABB2789A66100D5D651 /* Modular_TCATests.swift */; };
@@ -16,7 +20,6 @@
 		04CE6AC82789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */; };
 		04CE6AD92789ADFD00D5D651 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AD82789ADFD00D5D651 /* RootFeature.swift */; };
 		04CE6ADF2789B36B00D5D651 /* A1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04CE6ADE2789B36B00D5D651 /* A1 */; };
-		04CE6AE32789CD4D00D5D651 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AE22789CD4D00D5D651 /* DummyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B74F722789D95D009419AE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		04B74F792789D9B9009419AE /* TabBarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFeature.swift; sourceTree = "<group>"; };
+		04B74F7B2789D9D7009419AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		04B74F7D2789DBE1009419AE /* LoginFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFeature.swift; sourceTree = "<group>"; };
 		04CE6AA72789A66000D5D651 /* Modular-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modular-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE6AAA2789A66000D5D651 /* Modular_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modular_TCAApp.swift; sourceTree = "<group>"; };
-		04CE6AAC2789A66000D5D651 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04CE6AAC2789A66000D5D651 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		04CE6AAE2789A66100D5D651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CE6AB12789A66100D5D651 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04CE6AB72789A66100D5D651 /* Modular-TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Modular-TCATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +56,6 @@
 		04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modular_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04CE6AD82789ADFD00D5D651 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
 		04CE6ADD2789B36100D5D651 /* A1 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = A1; path = ../A1; sourceTree = "<group>"; };
-		04CE6AE22789CD4D00D5D651 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		04CE6AE42789CE6100D5D651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +85,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04B74F742789D966009419AE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04CE6AAA2789A66000D5D651 /* Modular_TCAApp.swift */,
+				04B74F772789D986009419AE /* Root */,
+				04B74F762789D982009419AE /* Login */,
+				04B74F752789D975009419AE /* TabBar */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		04B74F752789D975009419AE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				04CE6AAC2789A66000D5D651 /* TabBarView.swift */,
+				04B74F792789D9B9009419AE /* TabBarFeature.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		04B74F762789D982009419AE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04B74F722789D95D009419AE /* LoginView.swift */,
+				04B74F7D2789DBE1009419AE /* LoginFeature.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04B74F772789D986009419AE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				04B74F7B2789D9D7009419AE /* RootView.swift */,
+				04CE6AD82789ADFD00D5D651 /* RootFeature.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		04CE6A9E2789A66000D5D651 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +148,8 @@
 		04CE6AA92789A66000D5D651 /* Modular-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				04B74F742789D966009419AE /* Sources */,
 				04CE6AE42789CE6100D5D651 /* Info.plist */,
-				04CE6AAA2789A66000D5D651 /* Modular_TCAApp.swift */,
-				04CE6AAC2789A66000D5D651 /* ContentView.swift */,
-				04CE6AD82789ADFD00D5D651 /* RootFeature.swift */,
-				04CE6AE22789CD4D00D5D651 /* DummyView.swift */,
 				04CE6AAE2789A66100D5D651 /* Assets.xcassets */,
 				04CE6AB02789A66100D5D651 /* Preview Content */,
 			);
@@ -280,9 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE6AAD2789A66000D5D651 /* ContentView.swift in Sources */,
-				04CE6AE32789CD4D00D5D651 /* DummyView.swift in Sources */,
+				04B74F7A2789D9B9009419AE /* TabBarFeature.swift in Sources */,
+				04CE6AAD2789A66000D5D651 /* TabBarView.swift in Sources */,
+				04B74F7E2789DBE1009419AE /* LoginFeature.swift in Sources */,
 				04CE6AD92789ADFD00D5D651 /* RootFeature.swift in Sources */,
+				04B74F7C2789D9D7009419AE /* RootView.swift in Sources */,
+				04B74F732789D95D009419AE /* LoginView.swift in Sources */,
 				04CE6AAB2789A66000D5D651 /* Modular_TCAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  RootFeature.swift
+//  TabBarFeature.swift
 //  Modular-TCA
 //
 //  Created by Wimes on 2022/01/08.
@@ -10,24 +10,25 @@ import Effects
 import A1
 
 
-struct RootState{
+struct TabBarState: Equatable{
+    var loginData: String
     var a1State = A1State()
 }
 
-enum RootAction{
+enum TabBarAction{
     case a1Action(A1Action)
 }
 
-struct RootEnvironmnet{}
+struct TabBarEnvironmnet{}
 
-let rootReducer = Reducer<
-    RootState,
-    RootAction,
-    RootEnvironmnet
+let tabBarReducer = Reducer<
+    TabBarState,
+    TabBarAction,
+    TabBarEnvironmnet
 >.combine(
     a1Reducer.pullback(
         state: \.a1State,
-        action: /RootAction.a1Action,
+        action: /TabBarAction.a1Action,
         environment: { _ in
                 .init(
                     request: EffectsImpl().numbersApiOne,
@@ -36,4 +37,3 @@ let rootReducer = Reducer<
         })
     
 )
-
