@@ -8,15 +8,18 @@
 import ComposableArchitecture
 import Effects
 import A1
+import B1
 
 
 struct TabBarState: Equatable{
     var loginData: String
     var a1State = A1State()
+    var b1State = B1State()
 }
 
 enum TabBarAction{
     case a1Action(A1Action)
+    case b1Action(B1Action)
 }
 
 struct TabBarEnvironmnet{}
@@ -34,6 +37,16 @@ let tabBarReducer = Reducer<
                     request: EffectsImpl().numbersApiOne,
                     mainQueue: {.main}
                 )
-        })
+        }),
+    b1Reducer.pullback(
+        state: \.b1State,
+        action: /TabBarAction.b1Action,
+        environment: { _ in
+                .init()
+        }),
+    Reducer{state, action, _ in
+        state.b1State.loginData = state.loginData
+        return .none
+    }
     
 )

@@ -11,7 +11,7 @@ enum RootState: Equatable{
     case login(LoginState)
     case tabBar(TabBarState)
     
-    public init() { self = .login(.init(logInResponse: ""))}
+    public init() { self = .login(.init())}
 }
 
 

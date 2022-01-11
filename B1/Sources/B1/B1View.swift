@@ -8,7 +8,7 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct SwiftUIView: View {
+public struct B1View: View {
     
     let store: Store<B1State, B1Action>
     
@@ -16,11 +16,17 @@ struct SwiftUIView: View {
         self.store = store
     }
     
-    var body: some View {
+    public var body: some View {
         WithViewStore(self.store){ viewStore in
             VStack{
-                Text(viewStore.loginData)
+                Text("login Data: "+viewStore.loginData)
                 Text(viewStore.resultString)
+                Button {
+                    
+                } label: {
+                    Text("Open the B2View")
+                }
+
             }
             .onAppear {
                 viewStore.send(.onAppear)

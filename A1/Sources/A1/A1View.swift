@@ -19,6 +19,12 @@ public struct A1View: View {
         WithViewStore(self.store){ viewStore in
             VStack{
                 Text(viewStore.resultString)
+                Button {
+                    
+                } label: {
+                    Text("open the A2 View")
+                }
+
             }
             .onAppear {
                 viewStore.send(.onAppear)

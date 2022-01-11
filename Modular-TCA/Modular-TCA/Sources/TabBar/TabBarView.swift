@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-import A1
 import ComposableArchitecture
+import A1
+import B1
 
 struct TabBarView: View {
     let store: Store<TabBarState, TabBarAction>
@@ -24,7 +25,13 @@ struct TabBarView: View {
 //                        Text("loginData: \(viewStore.loginData)")
                         Text("A1")
                     }
-                
+                B1View(store: self.store.scope(
+                    state: \.b1State,
+                    action: TabBarAction.b1Action))
+                    .tabItem {
+                        Image(systemName: "list.dash")
+                        Text("B1")
+                    }
             }
         }
     }

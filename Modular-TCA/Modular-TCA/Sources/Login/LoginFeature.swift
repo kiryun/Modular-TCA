@@ -9,7 +9,7 @@ import Foundation
 import ComposableArchitecture
 
 struct LoginState: Equatable{
-    var logInResponse: String
+    var logInResponse: String = ""
 }
 
 enum LoginAction{
@@ -29,7 +29,7 @@ let loginReducer = Reducer<
         return .none
     case .logIn(.success(let response)):
         state.logInResponse = response
-        print("### ", state.logInResponse)
+//        print("### ", state.logInResponse)
         return .none
     }
     

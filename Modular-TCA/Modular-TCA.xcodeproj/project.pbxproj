@@ -19,8 +19,8 @@
 		04CE6AC62789A66100D5D651 /* Modular_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC52789A66100D5D651 /* Modular_TCAUITests.swift */; };
 		04CE6AC82789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */; };
 		04CE6AD92789ADFD00D5D651 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AD82789ADFD00D5D651 /* RootFeature.swift */; };
+		04D862BD278DB8E4004E82E1 /* B1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04D862BC278DB8E4004E82E1 /* B1 */; };
 		04EEAB9E278DB669008EDBEA /* A1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04EEAB9D278DB669008EDBEA /* A1 */; };
-		04EEABA0278DB669008EDBEA /* B1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04EEAB9F278DB669008EDBEA /* B1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04EEAB9E278DB669008EDBEA /* A1 in Frameworks */,
-				04EEABA0278DB669008EDBEA /* B1 in Frameworks */,
+				04D862BD278DB8E4004E82E1 /* B1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +224,7 @@
 			name = "Modular-TCA";
 			packageProductDependencies = (
 				04EEAB9D278DB669008EDBEA /* A1 */,
-				04EEAB9F278DB669008EDBEA /* B1 */,
+				04D862BC278DB8E4004E82E1 /* B1 */,
 			);
 			productName = "Modular-TCA";
 			productReference = 04CE6AA72789A66000D5D651 /* Modular-TCA.app */;
@@ -673,13 +673,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04D862BC278DB8E4004E82E1 /* B1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = B1;
+		};
 		04EEAB9D278DB669008EDBEA /* A1 */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = A1;
-		};
-		04EEAB9F278DB669008EDBEA /* B1 */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = B1;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -3,8 +3,9 @@ import ComposableArchitecture
 
 public struct B1State: Equatable{
     public init(){}
+//    public init(loginData: String){self.loginData = loginData}
     
-    var loginData: String = ""
+    public var loginData: String = ""
     var resultString: String = ""
 }
 
