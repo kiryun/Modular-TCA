@@ -21,8 +21,8 @@ struct TabBarView: View {
                 ))
                     .tabItem {
                         Image(systemName: "list.dash")
-                        Text("loginData: \(viewStore.loginData)")
-//                        Text("A1")
+//                        Text("loginData: \(viewStore.loginData)")
+                        Text("A1")
                     }
                 
             }

@@ -10,7 +10,7 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "Effects", targets: ["Effects"]),
+        .library(name: "Effects", type: .dynamic, targets: ["Effects"]),
     ],
     dependencies: [
         // MARK: https://forums.swift.org/t/how-to-integrate-tca-framework-as-of-0-1-3/36443

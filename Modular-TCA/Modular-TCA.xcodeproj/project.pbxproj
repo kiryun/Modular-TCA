@@ -19,7 +19,8 @@
 		04CE6AC62789A66100D5D651 /* Modular_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC52789A66100D5D651 /* Modular_TCAUITests.swift */; };
 		04CE6AC82789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */; };
 		04CE6AD92789ADFD00D5D651 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AD82789ADFD00D5D651 /* RootFeature.swift */; };
-		04CE6ADF2789B36B00D5D651 /* A1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04CE6ADE2789B36B00D5D651 /* A1 */; };
+		04EEAB9E278DB669008EDBEA /* A1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04EEAB9D278DB669008EDBEA /* A1 */; };
+		04EEABA0278DB669008EDBEA /* B1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04EEAB9F278DB669008EDBEA /* B1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		044C8503278C821E004F8CB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		044C8504278C8226004F8CB3 /* B1 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = B1; path = ../B1; sourceTree = "<group>"; };
 		04B74F722789D95D009419AE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		04B74F792789D9B9009419AE /* TabBarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFeature.swift; sourceTree = "<group>"; };
 		04B74F7B2789D9D7009419AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -64,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE6ADF2789B36B00D5D651 /* A1 in Frameworks */,
+				04EEAB9E278DB669008EDBEA /* A1 in Frameworks */,
+				04EEABA0278DB669008EDBEA /* B1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +142,7 @@
 		04CE6A9E2789A66000D5D651 = {
 			isa = PBXGroup;
 			children = (
+				044C8504278C8226004F8CB3 /* B1 */,
 				04CE6ADD2789B36100D5D651 /* A1 */,
 				04CE6AA92789A66000D5D651 /* Modular-TCA */,
 				04CE6ABA2789A66100D5D651 /* Modular-TCATests */,
@@ -198,6 +215,7 @@
 				04CE6AA32789A66000D5D651 /* Sources */,
 				04CE6AA42789A66000D5D651 /* Frameworks */,
 				04CE6AA52789A66000D5D651 /* Resources */,
+				044C8503278C821E004F8CB3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,7 +223,8 @@
 			);
 			name = "Modular-TCA";
 			packageProductDependencies = (
-				04CE6ADE2789B36B00D5D651 /* A1 */,
+				04EEAB9D278DB669008EDBEA /* A1 */,
+				04EEAB9F278DB669008EDBEA /* B1 */,
 			);
 			productName = "Modular-TCA";
 			productReference = 04CE6AA72789A66000D5D651 /* Modular-TCA.app */;
@@ -416,6 +435,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -471,6 +491,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -652,9 +673,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04CE6ADE2789B36B00D5D651 /* A1 */ = {
+		04EEAB9D278DB669008EDBEA /* A1 */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = A1;
+		};
+		04EEAB9F278DB669008EDBEA /* B1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = B1;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
