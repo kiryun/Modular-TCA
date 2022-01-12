@@ -22,11 +22,10 @@ public struct B1View: View {
                 Text("login Data: "+viewStore.loginData)
                 Text(viewStore.resultString)
                 Button {
-                    
+                    viewStore.send(.openTheNextView)
                 } label: {
                     Text("Open the B2View")
                 }
-
             }
             .onAppear {
                 viewStore.send(.onAppear)

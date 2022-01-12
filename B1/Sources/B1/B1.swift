@@ -12,6 +12,7 @@ public struct B1State: Equatable{
 public enum B1Action{
     case onAppear
     case dataLoaded(Result<String, ApiError>)
+    case openTheNextView
 }
 
 public struct B1Environment{
@@ -42,6 +43,8 @@ public let b1Reducer = Reducer<
         state.resultString = result
         return .none
     case .dataLoaded(.failure(let error)):
+        return .none
+    case .openTheNextView:
         return .none
     }
 }

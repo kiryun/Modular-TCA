@@ -7,7 +7,7 @@
 
 import ComposableArchitecture
 import Effects
-import A1
+import A
 import B1
 
 
@@ -45,7 +45,17 @@ let tabBarReducer = Reducer<
                 .init()
         }),
     Reducer{state, action, _ in
-        state.b1State.loginData = state.loginData
+        switch action{
+        case .b1Action(.onAppear):
+            state.b1State.loginData = state.loginData
+            return .none
+        case .b1Action(.openTheNextView):
+            return .none
+        default:
+            return .none
+        }
+    },
+    Reducer{ state, action, _ in
         return .none
     }
     

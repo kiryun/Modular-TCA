@@ -1,3 +1,3 @@
-# A1
+# A
 
 A description of this package.

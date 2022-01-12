@@ -18,14 +18,10 @@ struct RootView: View {
     var body: some View {
         SwitchStore(self.store){
             CaseLet(state: /RootState.login, action: RootAction.loginAction){ store in
-                NavigationView{
-                    LoginView(store: store)
-                }
+                LoginView(store: store)
             }
             CaseLet(state: /RootState.tabBar, action: RootAction.tabBarAction) { store in
-                NavigationView{
-                    TabBarView(store: store)
-                }
+                TabBarView(store: store)
             }
         }
     }

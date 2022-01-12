@@ -1,3 +1,10 @@
+//
+//  A1Feature.swift
+//  
+//
+//  Created by Wimes on 2022/01/12.
+//
+
 import Effects
 import ComposableArchitecture
 
@@ -54,3 +61,4 @@ func dummyA1Effect() -> Effect<String, ApiError>{
     let dummyString = "test"
     return Effect(value: dummyString)
 }
+
