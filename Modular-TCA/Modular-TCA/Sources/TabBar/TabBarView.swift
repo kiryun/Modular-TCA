@@ -9,6 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 import A
 import B1
+import B2
 
 struct TabBarView: View {
     let store: Store<TabBarState, TabBarAction>
@@ -16,8 +17,6 @@ struct TabBarView: View {
     var body: some View {
         WithViewStore(self.store){ viewStore in
             TabView{
-                // MARK: To-Do
-                // A1 -> A2는 package 내부에서 이동으로
                 A1View(store: self.store.scope(
                     state: \.a1State,
                     action: TabBarAction.a1Action
@@ -28,18 +27,36 @@ struct TabBarView: View {
                     }
                 
                 NavigationView{
-                    // MARK: To-Do
-                    // B1 -> B2는 package간에 이동
                     B1View(store: self.store.scope(
                         state: \.b1State,
                         action: TabBarAction.b1Action
                     ))
-                        .navigationTitle("B1")
+                    
+//                    // https://stackoverflow.com/questions/57315409/push-view-programmatically-in-callback-swiftui
+//                    NavigationLink(
+//                        // https://www.pointfree.co/blog/posts/63-the-composable-architecture-%EF%B8%8F-swiftui-bindings
+//                        // https://forums.swift.org/t/how-to-use-binding-with-tca/36702/9
+//                        isActive: viewStore.binding(
+//                            get: \.openTheB2View,
+//                            send: .b2Action(.onAppear)
+//                        )
+//                    ) {
+//                        B2View(store: self.store.scope(
+//                            state: \.b2State,
+//                            action: TabBarAction.b2Action
+//                        ))
+//                    } label: {
+//                        EmptyView()
+//                    }
+
+
                 }
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("B")
                 }
+                
+                
             }
         }
     }

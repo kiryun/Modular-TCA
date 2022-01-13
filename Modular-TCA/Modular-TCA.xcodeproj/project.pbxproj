@@ -20,6 +20,7 @@
 		04CE6AC82789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */; };
 		04CE6AD92789ADFD00D5D651 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE6AD82789ADFD00D5D651 /* RootFeature.swift */; };
 		04D862BD278DB8E4004E82E1 /* B1 in Frameworks */ = {isa = PBXBuildFile; productRef = 04D862BC278DB8E4004E82E1 /* B1 */; };
+		04F1F682278F189200EE0697 /* B2 in Frameworks */ = {isa = PBXBuildFile; productRef = 04F1F681278F189200EE0697 /* B2 */; };
 		04F838FA278DD92000EA6D37 /* A in Frameworks */ = {isa = PBXBuildFile; productRef = 04F838F9278DD92000EA6D37 /* A */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		04CE6AC72789A66100D5D651 /* Modular_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modular_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04CE6AD82789ADFD00D5D651 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
 		04CE6AE42789CE6100D5D651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04F1F680278F188C00EE0697 /* B2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = B2; path = ../B2; sourceTree = "<group>"; };
 		04F838F8278DD91300EA6D37 /* A */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = A; path = ../A; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			files = (
 				04F838FA278DD92000EA6D37 /* A in Frameworks */,
 				04D862BD278DB8E4004E82E1 /* B1 in Frameworks */,
+				04F1F682278F189200EE0697 /* B2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +145,7 @@
 		04CE6A9E2789A66000D5D651 = {
 			isa = PBXGroup;
 			children = (
+				04F1F680278F188C00EE0697 /* B2 */,
 				044C8504278C8226004F8CB3 /* B1 */,
 				04F838F8278DD91300EA6D37 /* A */,
 				04CE6AA92789A66000D5D651 /* Modular-TCA */,
@@ -225,6 +229,7 @@
 			packageProductDependencies = (
 				04D862BC278DB8E4004E82E1 /* B1 */,
 				04F838F9278DD92000EA6D37 /* A */,
+				04F1F681278F189200EE0697 /* B2 */,
 			);
 			productName = "Modular-TCA";
 			productReference = 04CE6AA72789A66000D5D651 /* Modular-TCA.app */;
@@ -676,6 +681,10 @@
 		04D862BC278DB8E4004E82E1 /* B1 */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = B1;
+		};
+		04F1F681278F189200EE0697 /* B2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = B2;
 		};
 		04F838F9278DD92000EA6D37 /* A */ = {
 			isa = XCSwiftPackageProductDependency;

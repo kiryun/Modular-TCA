@@ -13,6 +13,7 @@ import B1
 
 struct TabBarState: Equatable{
     var loginData: String
+    
     var a1State = A1State()
     var b1State = B1State()
 }
@@ -49,14 +50,10 @@ let tabBarReducer = Reducer<
         case .b1Action(.onAppear):
             state.b1State.loginData = state.loginData
             return .none
-        case .b1Action(.openTheNextView):
-            return .none
         default:
+//            return Effect<TabBarAction, Never>(value: .b2Action(.onAppear))
             return .none
         }
-    },
-    Reducer{ state, action, _ in
-        return .none
     }
     
 )
