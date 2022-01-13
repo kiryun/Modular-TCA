@@ -9,21 +9,22 @@ let package = Package(
         .iOS(.v14)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "Effects", type: .dynamic, targets: ["Effects"]),
     ],
     dependencies: [
-        // MARK: https://forums.swift.org/t/how-to-integrate-tca-framework-as-of-0-1-3/36443
-//        .package(name: "swift-composable-architecture", url: "https://github.com/pointfreeco/swift-composable-architecture", .branch("master")),
-        
+    
+        // MARK: https://forums.swift.org/t/how-to-integrate-tca-framework-as-of-0-1-3/36443 여기서는 안된다고 함.
+        // 위 링크는 옛날 자료고 아래처럼 하면 됨
+//        package(
+//            url: "https://github.com/pointfreeco/swift-composable-architecture",
+//            .upToNextMajor(from: "0.33.0")
+//        )
         .package(
             name: "swift-composable-architecture",
             path: "../swift-composable-architecture"
         )
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Effects",
             dependencies: [
