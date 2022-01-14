@@ -3,12 +3,13 @@ import ComposableArchitecture
 import B2
 
 public struct B1State: Equatable{
-    public init(){}
-    
     public var loginData: String = ""
-    var resultString: String = ""
+    public var resultString: String = ""
+    public var b2State = B2State(resultString: "")
     
-    var b2State = B2State(resultString: "")
+    // 외부로 접근이 제한된 변수가 필요하다면 private으로 선언
+//    private internalData: String = ""
+    public init(){}
 }
 
 public enum B1Action{
@@ -19,16 +20,16 @@ public enum B1Action{
 }
 
 public struct B1Environment{
-    var request: () -> Effect<String, ApiError> = {
-        let effects: Effects = EffectsImpl()
-        return effects.numbersApiTwo()
-    }
-    
-    var mainQueue: () -> AnySchedulerOf<DispatchQueue> = {.main}
+    var request: () -> Effect<String, ApiError>
+    var mainQueue: () -> AnySchedulerOf<DispatchQueue>
 
-    public init(){}
-    
-    // var dev = {}
+    public init(
+        request: @escaping () -> Effect<String, ApiError>,
+        mainQueue: @escaping () -> AnySchedulerOf<DispatchQueue>
+    ){
+        self.request = request
+        self.mainQueue = mainQueue
+    }
 }
 
 public let b1Reducer = Reducer<

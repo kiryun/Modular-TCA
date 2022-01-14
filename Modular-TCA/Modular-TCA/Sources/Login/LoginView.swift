@@ -21,9 +21,6 @@ struct LoginView: View {
                     Text("logIn")
                 }
             }
-            .onAppear {
-                viewStore.send(.onAppear)
-            }
         }
     }
 }

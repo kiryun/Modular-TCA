@@ -20,10 +20,7 @@ public enum A1Action: Equatable{
 
 public struct A1Environment{
     
-    public init(
-        request: () -> Effect<String, ApiError>,
-        mainQueue: () -> AnySchedulerOf<DispatchQueue>
-    ){}
+    public init(){}
     
     var request: () -> Effect<String, ApiError> = {
         let effects: Effects = EffectsImpl()

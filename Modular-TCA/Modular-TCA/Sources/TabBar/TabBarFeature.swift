@@ -34,16 +34,16 @@ let tabBarReducer = Reducer<
         state: \.a1State,
         action: /TabBarAction.a1Action,
         environment: { _ in
-                .init(
-                    request: EffectsImpl().numbersApiOne,
-                    mainQueue: {.main}
-                )
+                .init()
         }),
     b1Reducer.pullback(
         state: \.b1State,
         action: /TabBarAction.b1Action,
         environment: { _ in
-                .init()
+                .init(
+                    request: {EffectsImpl().numbersApiTwo()},
+                    mainQueue: {.main}
+                )
         }),
     Reducer{state, action, _ in
         switch action{
@@ -55,5 +55,4 @@ let tabBarReducer = Reducer<
             return .none
         }
     }
-    
 )
