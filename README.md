@@ -67,7 +67,7 @@ TCA를 공부하고 나서 내가 느낀 TCA의 단점은 하나이다. Feature�
 Login버튼을 누르면 해당 화면이 변경되고 TabBar를 통해 A1View가 나온다. A\~B View는 [numbersapi](http://numbersapi.com/)에서 `/1` \~ `/4` 으로 요청해서 받은 값을 보여준다.
 그 중 B1View는 login할 때 전달 받은 데이터도 같이 표출해준다. A~B는 NavigationView내부에 있다.
 
-![Simulator Screen Recording - iPhone 12 mini - 2022-01-15 at 01.24.01](README.assets/Simulator Screen Recording - iPhone 12 mini - 2022-01-15 at 01.24.01.gif)
+![Simulator Screen Recording - iPhone 12 mini - 2022-01-15 at 01.24.01](README.assets/app.gif)
 
 ## SwiftPM을 이용한 모듈 구성
 
