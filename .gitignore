@@ -128,3 +128,4 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,macos,swift
+/Modular-TCA/Modular-TCA.xcodeproj/project.xcworkspace/xcshareddata/swiftpm
