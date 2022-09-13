@@ -1,3 +1,4 @@
+**해당 repo는 https://github.com/dev-wimes/TCAExample 으로 이동/업데이트 했습니다!**
 # 개요
 
 TCA를 공부하고 나서 내가 느낀 TCA의 단점은 하나이다. Feature에 파편화에 따른 관리의 복잡함.
